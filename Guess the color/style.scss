@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-family: system-ui;
+  }
+  main{
+    height: 100%;
+    width: 100%;
+    background-color: #0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    h1{
+        color: white;
+    }
+    #box{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: aqua;
+        border: 5px solid white;
+    }
+    button{
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    button:active{
+        scale:0.9;
+    }
+  }
