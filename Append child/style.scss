@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui
+}
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: top 0.3s;
+    backdrop-filter: blur(5px);
+  padding: 10px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+font-size: 20px;
+        }
+main{   
+    height: 100%;
+    width: 100%;
+    background-color: #0b0b0b;
+ 
+    
+}
+.section1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    #box{
+        height: 90vh;
+        width: 70%;
+        background-color: antiquewhite;
+        position: relative;
+        overflow: hidden;
+    }
+    button{
+        padding: 20px 30px ;
+        background-color: lightblue;
+    border: none;
+        border-radius: 10px;
+        font-size: 40px;
+    }
+    button:active{
+        scale: 0.95;
+    }
+}
+
+
+
+.section2{
+    height: 100%;
+    background-color: rgb(86, 142, 190);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 300px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 10px rgba(0, 0, 0,);
+        background-color: #dadada5b;
+        border-radius: 10px;
+        cursor: pointer;
+       .img{
+ filter: drop-shadow(10px 10px 5px hsla(0deg, 0%, 0%, 0.8)) ;
+        height: 70%;
+        width: 90%;
+        box-shadow: 0 0 10px rgb(255, 0, 0);
+        border-radius: 10px;
+        margin-bottom: 10px;
+       }
+       .love{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 0px;
+        transition: all ease 0.2s;
+       }
+    }
+    
+}
+
+
+
+
